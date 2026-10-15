@@ -81,5 +81,10 @@ fun FormBiodata(
     val pilihanExperience = stringArrayResource(
         R.array.experience_options
     )
+    val daftarSkill = listOf(
+        stringResource(R.string.skill_android),
+        stringResource(R.string.skill_uiux),
+        stringResource(R.string.skill_web)
+    )
 
 }
