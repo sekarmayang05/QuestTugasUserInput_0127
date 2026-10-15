@@ -78,4 +78,8 @@ fun FormBiodata(
     var experience by remember { mutableStateOf("") }
     var dropdownExpanded by remember { mutableStateOf(false) }
 
+    val pilihanExperience = stringArrayResource(
+        R.array.experience_options
+    )
+
 }
