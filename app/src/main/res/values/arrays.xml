@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="experience_options">
-        <item>Beginner</item>
-        <item>Intermediate</item>
-        <item>Advanced</item>
+        <item>Beginner (&lt; 1 Tahun)</item>
+        <item>Intermediate (1 - 3 Tahun)</item>
+        <item>Expert (&gt; 3 Tahun)</item>
     </string-array>
 </resources>

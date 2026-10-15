@@ -1,47 +1,46 @@
+
 package com.example.tugas4userinput
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.tugas4userinput.ui.theme.Tugas4UserInputTheme
+import androidx.compose.ui.res.colorResource
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContent {
-            Tugas4UserInputTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+            MaterialTheme {
+                val snackbarHostState = remember {
+                    SnackbarHostState()
+                }
+
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                    containerColor = colorResource(
+                        R.color.screen_background
+                    ),
+                    snackbarHost = {
+                        SnackbarHost(
+                            hostState = snackbarHostState
+                        )
+                    }
+                ) { innerPadding ->
+                    FormBiodata(
+                        snackbarHostState = snackbarHostState,
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Tugas4UserInputTheme {
-        Greeting("Android")
     }
 }

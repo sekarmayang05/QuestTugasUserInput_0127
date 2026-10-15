@@ -8,7 +8,7 @@
     <dimen name="card_top_padding">22dp</dimen>
     <dimen name="card_bottom_padding">24dp</dimen>
 
-    <dimen name="input_height">54dp</dimen>
+    <dimen name="input_height">60dp</dimen>
     <dimen name="input_corner">14dp</dimen>
     <dimen name="input_spacing">18dp</dimen>
 
