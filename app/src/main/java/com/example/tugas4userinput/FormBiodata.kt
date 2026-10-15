@@ -93,4 +93,7 @@ fun FormBiodata(
         mutableStateOf<Job?>(null)
     }
 
+    val purple = colorResource(R.color.purple_primary)
+    val border = colorResource(R.color.gray_border)
+
 }
