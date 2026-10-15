@@ -20,4 +20,13 @@
     <string name="snackbar_success">Data biodata berhasil dikirim!</string>
     <string name="snackbar_error">Lengkapi biodata dengan benar terlebih dahulu!</string>
     <string name="snackbar_dismiss">Tutup</string>
+
+    <string name="dialog_title">Data Biodata Anda</string>
+    <string name="dialog_nama">Nama: %1$s %2$s</string>
+    <string name="dialog_email">Email: %1$s</string>
+    <string name="dialog_tgl_lahir">Tgl Lahir: %1$s</string>
+    <string name="dialog_experience">Experience: %1$s</string>
+    <string name="dialog_skill">Skill: %1$s</string>
+    <string name="dialog_ok">OK</string>
+
 </resources>

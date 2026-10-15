@@ -473,20 +473,22 @@ fun FormBiodata(
                 onDismissRequest = { showDialog = false },
                 title = {
                     Text(
-                        text = "Data Biodata Anda",
+                        text = stringResource(R.string.dialog_title),
                         fontWeight = FontWeight.Bold,
-                        fontSize = 18.sp
+                        fontSize = dimensionResource(R.dimen.title_size).value.sp
                     )
                 },
                 text = {
                     Column(
-                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                        verticalArrangement = Arrangement.spacedBy(
+                            dimensionResource(R.dimen.small_spacing)
+                        )
                     ) {
-                        Text(text = "Nama: $namaDepan $namaBelakang")
-                        Text(text = "Email: $email")
-                        Text(text = "Tgl Lahir: $tanggalLahir")
-                        Text(text = "Experience: $experience")
-                        Text(text = "Skill: ${skillTerpilih.joinToString(", ")}")
+                        Text(text = stringResource(R.string.dialog_nama, namaDepan, namaBelakang))
+                        Text(text = stringResource(R.string.dialog_email, email))
+                        Text(text = stringResource(R.string.dialog_tgl_lahir, tanggalLahir))
+                        Text(text = stringResource(R.string.dialog_experience, experience))
+                        Text(text = stringResource(R.string.dialog_skill, skillTerpilih.joinToString(", ")))
                     }
                 },
                 confirmButton = {
@@ -494,20 +496,20 @@ fun FormBiodata(
                         onClick = { showDialog = false }
                     ) {
                         Text(
-                            text = "OK",
+                            text = stringResource(R.string.dialog_ok),
                             fontWeight = FontWeight.Bold,
                             color = purple
                         )
                     }
                 },
-                shape = RoundedCornerShape(16.dp),
+                shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner)),
                 containerColor = colorResource(R.color.white)
             )
         }
-    }
-}
+    } // <-- Tutup kurung kurawal Box utama ditambahkan di sini
+} // <-- Tutup kurung kurawal fungsi FormBiodata ditambahkan di sini
 
-// Helper Composable untuk Input TextField
+// Helper Composable untuk Input TextField (BERADA DI LUAR FormBiodata)
 @Composable
 private fun InputBiodata(
     value: String,
