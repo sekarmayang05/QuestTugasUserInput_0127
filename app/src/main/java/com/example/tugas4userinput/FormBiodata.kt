@@ -96,4 +96,10 @@ fun FormBiodata(
     val purple = colorResource(R.color.purple_primary)
     val border = colorResource(R.color.gray_border)
 
+    val headerHeight = dimensionResource(R.dimen.header_height)
+    val cardOverlap = dimensionResource(R.dimen.card_overlap)
+    val inputHeight = dimensionResource(R.dimen.input_height)
+    val inputCorner = dimensionResource(R.dimen.input_corner)
+    val spacing = dimensionResource(R.dimen.input_spacing)
+
 }
