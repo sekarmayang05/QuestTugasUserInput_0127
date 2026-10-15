@@ -158,6 +158,25 @@ fun FormBiodata(
                     )
                 )
             ){
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(
+                            horizontal = dimensionResource(
+                                R.dimen.card_horizontal_padding
+                            )
+                        )
+                        .padding(
+                            top = dimensionResource(
+                                R.dimen.card_top_padding
+                            ),
+                            bottom = dimensionResource(
+                                R.dimen.card_bottom_padding
+                            )
+                        )
+                ){
+
+                }
 
             }
         }
