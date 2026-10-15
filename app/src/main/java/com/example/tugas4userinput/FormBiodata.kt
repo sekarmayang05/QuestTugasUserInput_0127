@@ -71,4 +71,11 @@ fun FormBiodata(
     val context = androidx.compose.ui.platform.LocalContext.current
     val scope = rememberCoroutineScope()
 
+    var namaDepan by remember { mutableStateOf("") }
+    var namaBelakang by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+    var tanggalLahir by remember { mutableStateOf("") }
+    var experience by remember { mutableStateOf("") }
+    var dropdownExpanded by remember { mutableStateOf(false) }
+
 }
