@@ -104,4 +104,12 @@ fun FormBiodata(
 
     val calendar = Calendar.getInstance()
 
+    val formValid =
+        namaDepan.isNotBlank() &&
+                namaBelakang.isNotBlank() &&
+                Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
+                tanggalLahir.isNotBlank() &&
+                experience.isNotBlank() &&
+                skillTerpilih.isNotEmpty()
+
 }
