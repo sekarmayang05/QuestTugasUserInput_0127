@@ -86,5 +86,8 @@ fun FormBiodata(
         stringResource(R.string.skill_uiux),
         stringResource(R.string.skill_web)
     )
+    val skillTerpilih = remember {
+        mutableStateListOf<String>()
+    }
 
 }
