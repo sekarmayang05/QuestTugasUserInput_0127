@@ -221,7 +221,19 @@ fun FormBiodata(
                             borderColor = border
                         )
 
+                        InputBiodata(
+                            value = namaBelakang,
+                            onValueChange = { namaBelakang = it },
+                            label = stringResource(R.string.last_name),
+                            modifier = Modifier.weight(1f),
+                            height = inputHeight,
+                            corner = inputCorner,
+                            borderColor = border
+                        )
+
                     }
+                    Spacer(modifier = Modifier.height(spacing))
+
 
                 }
 
