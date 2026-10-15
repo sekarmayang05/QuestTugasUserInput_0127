@@ -211,6 +211,15 @@ fun FormBiodata(
                             dimensionResource(R.dimen.small_spacing)
                         )
                     ){
+                        InputBiodata(
+                            value = namaDepan,
+                            onValueChange = { namaDepan = it },
+                            label = stringResource(R.string.first_name),
+                            modifier = Modifier.weight(1f),
+                            height = inputHeight,
+                            corner = inputCorner,
+                            borderColor = border
+                        )
 
                     }
 
