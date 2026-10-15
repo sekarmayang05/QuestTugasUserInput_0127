@@ -102,4 +102,6 @@ fun FormBiodata(
     val inputCorner = dimensionResource(R.dimen.input_corner)
     val spacing = dimensionResource(R.dimen.input_spacing)
 
+    val calendar = Calendar.getInstance()
+
 }
