@@ -234,6 +234,19 @@ fun FormBiodata(
                     }
                     Spacer(modifier = Modifier.height(spacing))
 
+                    // Email
+                    InputBiodata(
+                        value = email,
+                        onValueChange = { email = it },
+                        label = stringResource(R.string.email),
+                        modifier = Modifier.fillMaxWidth(),
+                        height = inputHeight,
+                        corner = inputCorner,
+                        borderColor = border
+                    )
+
+                    Spacer(modifier = Modifier.height(spacing))
+
 
                 }
 
