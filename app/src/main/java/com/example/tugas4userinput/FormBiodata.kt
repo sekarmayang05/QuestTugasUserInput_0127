@@ -117,6 +117,25 @@ fun FormBiodata(
             .fillMaxSize()
             .background(colorResource(R.color.screen_background))
     ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+        ){
+            // Header gambar Spider-Man
+            Image(
+                painter = painterResource(
+                    id = R.drawable.spiderman_header
+                ),
+                contentDescription = stringResource(
+                    R.string.form_title
+                ),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(headerHeight)
+            )
+        }
 
     }
 
