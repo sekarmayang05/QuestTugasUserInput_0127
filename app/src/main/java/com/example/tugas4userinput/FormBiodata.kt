@@ -152,6 +152,14 @@ fun FormBiodata(
                 colors = CardDefaults.cardColors(
                     containerColor = colorResource(R.color.white)
                 ),
+                elevation = CardDefaults.cardElevation(
+                    defaultElevation = dimensionResource(
+                        R.dimen.small_spacing
+                    )
+                )
+            ){
+
+            }
         }
 
     }
