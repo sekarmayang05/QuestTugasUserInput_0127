@@ -3,4 +3,9 @@
     <dimen name="header_height">220dp</dimen>
     <dimen name="card_overlap">25dp</dimen>
     <dimen name="card_corner">30dp</dimen>
+
+    <dimen name="card_horizontal_padding">24dp</dimen>
+    <dimen name="card_top_padding">22dp</dimen>
+    <dimen name="card_bottom_padding">24dp</dimen>
+
 </resources>
