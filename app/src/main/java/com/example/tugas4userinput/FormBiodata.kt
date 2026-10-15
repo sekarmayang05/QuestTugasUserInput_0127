@@ -191,6 +191,18 @@ fun FormBiodata(
                         )
                     )
 
+                    Text(
+                        text = stringResource(R.string.form_subtitle),
+                        fontSize = dimensionResource(
+                            R.dimen.subtitle_size
+                        ).value.sp,
+                        color = colorResource(R.color.gray_text),
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
+                    Spacer(modifier = Modifier.height(spacing))
+
                 }
 
             }
