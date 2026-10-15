@@ -135,6 +135,23 @@ fun FormBiodata(
                     .fillMaxWidth()
                     .height(headerHeight)
             )
+
+            // Card form menumpang di atas bagian bawah gambar
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .offset(y = -cardOverlap),
+                shape = RoundedCornerShape(
+                    topStart = dimensionResource(
+                        R.dimen.card_corner
+                    ),
+                    topEnd = dimensionResource(
+                        R.dimen.card_corner
+                    )
+                ),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(R.color.white)
+                ),
         }
 
     }
