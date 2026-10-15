@@ -203,6 +203,17 @@ fun FormBiodata(
 
                     Spacer(modifier = Modifier.height(spacing))
 
+
+                    // Nama depan dan nama belakang
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(
+                            dimensionResource(R.dimen.small_spacing)
+                        )
+                    ){
+
+                    }
+
                 }
 
             }
