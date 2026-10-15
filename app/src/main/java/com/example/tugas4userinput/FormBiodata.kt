@@ -175,6 +175,16 @@ fun FormBiodata(
                             )
                         )
                 ){
+                    Text(
+                        text = stringResource(R.string.form_title),
+                        fontSize = dimensionResource(
+                            R.dimen.title_size
+                        ).value.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = purple,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
 
                 }
 
