@@ -185,6 +185,11 @@ fun FormBiodata(
                         textAlign = TextAlign.Center,
                         modifier = Modifier.fillMaxWidth()
                     )
+                    Spacer(
+                        modifier = Modifier.height(
+                            dimensionResource(R.dimen.small_spacing)
+                        )
+                    )
 
                 }
 
