@@ -112,4 +112,12 @@ fun FormBiodata(
                 experience.isNotBlank() &&
                 skillTerpilih.isNotEmpty()
 
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(colorResource(R.color.screen_background))
+    ) {
+
+    }
+
 }
