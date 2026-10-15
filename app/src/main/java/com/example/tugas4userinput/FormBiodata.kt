@@ -89,5 +89,8 @@ fun FormBiodata(
     val skillTerpilih = remember {
         mutableStateListOf<String>()
     }
+    var snackbarJob by remember {
+        mutableStateOf<Job?>(null)
+    }
 
 }
